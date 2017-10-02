@@ -14,7 +14,7 @@
 body {
     height: 1000px;
     width: 100%;
-    background-color: white;
+    background-color: transparent;
 }
 
 body:after {
@@ -119,6 +119,16 @@ img{
     margin-right: 18px;
     margin-left: 18px;
     margin-bottom: 18px;
+}
+
+.collapsible-header {
+    display: block;
+    cursor: pointer;
+    min-height: 3rem;
+    line-height: 3rem;
+    padding: 0 1rem;
+    background-color: transparent; 
+    border-bottom: 1px solid black;
 }
 
 .titleproj:hover{
