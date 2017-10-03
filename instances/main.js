@@ -7,7 +7,8 @@ $(document).ready(function(){
 
     $('.collapsible').collapsible();
   
-   
+  //Show-hide projects -------------------------------------------------
+
     $("#PRO1").hide();
     $("#PRO2").hide();
     $("#PRO3").hide();
@@ -20,55 +21,92 @@ $(document).ready(function(){
     $('.collapsible').collapsible();
 
 
-  $(document).on("click", function(e){
-      if($(e.target).is("#p1")){
-        $("#PRO1").show();
-      }else{
-          $("#PRO1").hide();
-      }
+  // $(document).on("click", function(e){
+  //     if($(e.target).is("#p1")){
+  //       $("#PRO1").show();
+  //     }
+  // });
+
+    $('#p1').on('click', function(){
+    $('#PRO1').show();
   });
 
-  $(document).on("click", function(e){
-      if($(e.target).is("#p2")){
-        $("#PRO2").show();
-      }else{
-          $("#PRO2").hide();
-      }
+           $('#closing1').on('click', function(){
+               $('#PRO1').hide();
+            });
+           $('#closing2').on('click', function(){
+               $('#PRO2').hide();
+            });
+           $('#closing3').on('click', function(){
+               $('#PRO3').hide();
+            });
+           $('#closing4').on('click', function(){
+               $('#PRO4').hide();
+            });
+           $('#closing6').on('click', function(){
+               $('#PRO6').hide();
+            });
+           $('#closing7').on('click', function(){
+               $('#PRO7').hide();
+            });
+
+
+    $('#p2').on('click', function(){
+    $('#PRO2').show();
+  });
+  // $(document).on("click", function(e){
+  //     if($(e.target).is("#p2")){
+  //       $("#PRO2").show();
+  //     }else{
+  //         $("#PRO2").hide();
+  //     }
+  // });
+
+  // $(document).on("click", function(e){
+  //     if($(e.target).is("#p3")){
+  //       $("#PRO3").show();
+  //     }else{
+  //         $("#PRO3").hide();
+  //     }
+  // });
+
+      $('#p3').on('click', function(){
+    $('#PRO3').show();
   });
 
-  $(document).on("click", function(e){
-      if($(e.target).is("#p3")){
-        $("#PRO3").show();
-      }else{
-          $("#PRO3").hide();
-      }
+  //   $(document).on("click", function(e){
+  //     if($(e.target).is("#p4")){
+  //       $("#PRO4").show();
+  //     }else{
+  //         $("#PRO4").hide();
+  //     }
+  // });
+
+    $('#p4').on('click', function(){
+    $('#PRO4').show();
   });
 
-    $(document).on("click", function(e){
-      if($(e.target).is("#p4")){
-        $("#PRO4").show();
-      }else{
-          $("#PRO4").hide();
-      }
-  });
-
-
-
-    $(document).on("click", function(e){
-      if($(e.target).is("#p6")){
-        $("#PRO6").show();
-      }else{
-          $("#PRO6").hide();
-      }
+  //   $(document).on("click", function(e){
+  //     if($(e.target).is("#p6")){
+  //       $("#PRO6").show();
+  //     }else{
+  //         $("#PRO6").hide();
+  //     }
+  // });
+    $('#p6').on('click', function(){
+    $('#PRO6').show();
   });
 
 
-    $(document).on("click", function(e){
-      if($(e.target).is("#p7")){
-        $("#PRO7").show();
-      }else{
-          $("#PRO7").hide();
-      }
+  //   $(document).on("click", function(e){
+  //     if($(e.target).is("#p7")){
+  //       $("#PRO7").show();
+  //     }else{
+  //         $("#PRO7").hide();
+  //     }
+  // });
+      $('#p7').on('click', function(){
+    $('#PRO7').show();
   });
 
   });
@@ -77,7 +115,43 @@ $(document).ready(function(){
  
   });
 
-//BG COLOR CHANGES ON MOUSE POSITION
+
+///ANCHOR LINKS TO PROJECTS------------------------------------------------------------
+function scrollToAnchor(aid){
+    var aTag = $("a[name='"+ aid +"']");
+    $('html,body').animate({scrollTop: aTag.offset().top},'slow');
+}
+
+
+
+$("#link1").click(function() {
+   scrollToAnchor('id1');
+});
+$("#link2").click(function() {
+   scrollToAnchor('id2');
+});
+$("#link3").click(function() {
+   scrollToAnchor('id3');
+});
+$("#link4").click(function() {
+   scrollToAnchor('id4');
+});
+$("#link6").click(function() {
+   scrollToAnchor('id6');
+});
+$("#link7").click(function() {
+   scrollToAnchor('id7');
+});
+
+
+
+
+
+
+
+
+
+//BG COLOR CHANGES ON MOUSE POSITION ----------------------------------------
 
 var $win = $(window),
   w = 0,
@@ -94,10 +168,10 @@ var average = function(a, b) {
 }
 
 var center = [255, 230, 230]; // white
-var topMiddle = [230, 230, 230]; // black
-var leftMiddle = [255, 255, 255]; // red
+var topMiddle = [230, 247, 230]; // black
+var leftMiddle = [230, 247, 255]; // red
 var rightMiddle = [230, 255, 230]; // green;
-var bottomMiddle = [230, 247, 255]; // blue;
+var bottomMiddle = [255, 255, 255]; // blue;
 
 
 var topLeft = average(leftMiddle, topMiddle);
