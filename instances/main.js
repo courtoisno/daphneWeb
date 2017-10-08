@@ -4,110 +4,80 @@
 
 $(document).ready(function(){
 
+//   $('a[href^="#"]').click(function(){
+//   var the_id = $(this).attr("href");
+
+//   $('html, body').animate({
+//     scrollTop:$(the_id).offset().top
+//   }, 'slow');
+//   return false;
+// });
+
 
     $('.collapsible').collapsible();
+
   
   //Show-hide projects -------------------------------------------------
-
-    $("#PRO1").hide();
-    $("#PRO2").hide();
-    $("#PRO3").hide();
-    $("#PRO4").hide();
-       $("#PRO6").hide();
-   $("#PRO7").hide();
 
 
   $(document).ready(function(){
     $('.collapsible').collapsible();
 
+          $('#p1').on('click', function(){
+    $('#PRO1').css("display","block");
+  })
 
-  // $(document).on("click", function(e){
-  //     if($(e.target).is("#p1")){
-  //       $("#PRO1").show();
-  //     }
-  // });
-
-    $('#p1').on('click', function(){
-    $('#PRO1').show();
+     $('#p2').on('click', function(){
+    $('#PRO2').css("display","block");
   });
-
-           $('#closing1').on('click', function(){
-               $('#PRO1').hide();
-            });
-           $('#closing2').on('click', function(){
-               $('#PRO2').hide();
-            });
-           $('#closing3').on('click', function(){
-               $('#PRO3').hide();
-            });
-           $('#closing4').on('click', function(){
-               $('#PRO4').hide();
-            });
-           $('#closing6').on('click', function(){
-               $('#PRO6').hide();
-            });
-           $('#closing7').on('click', function(){
-               $('#PRO7').hide();
-            });
-
-
-    $('#p2').on('click', function(){
-    $('#PRO2').show();
-  });
-  // $(document).on("click", function(e){
-  //     if($(e.target).is("#p2")){
-  //       $("#PRO2").show();
-  //     }else{
-  //         $("#PRO2").hide();
-  //     }
-  // });
-
-  // $(document).on("click", function(e){
-  //     if($(e.target).is("#p3")){
-  //       $("#PRO3").show();
-  //     }else{
-  //         $("#PRO3").hide();
-  //     }
-  // });
 
       $('#p3').on('click', function(){
-    $('#PRO3').show();
-  });
-
-  //   $(document).on("click", function(e){
-  //     if($(e.target).is("#p4")){
-  //       $("#PRO4").show();
-  //     }else{
-  //         $("#PRO4").hide();
-  //     }
-  // });
+    $('#PRO3').css("display","block");
+    });
 
     $('#p4').on('click', function(){
-    $('#PRO4').show();
+    $('#PRO4').css("display","block");
   });
 
-  //   $(document).on("click", function(e){
-  //     if($(e.target).is("#p6")){
-  //       $("#PRO6").show();
-  //     }else{
-  //         $("#PRO6").hide();
-  //     }
-  // });
-    $('#p6').on('click', function(){
-    $('#PRO6').show();
+       $('#p5').on('click', function(){
+    $('#PRO5').css("display","block");
+  });
+
+        $('#p6').on('click', function(){
+    $('#PRO6').css("display","block");
   });
 
 
-  //   $(document).on("click", function(e){
-  //     if($(e.target).is("#p7")){
-  //       $("#PRO7").show();
-  //     }else{
-  //         $("#PRO7").hide();
-  //     }
-  // });
       $('#p7').on('click', function(){
-    $('#PRO7').show();
+    $('#PRO7').css("display","block");
   });
+  
+
+
+
+
+
+           $('#closing1').on('click', function(){
+               $('#PRO1').css("display","none");
+            });
+           $('#closing2').on('click', function(){
+               $('#PRO2').css("display","none");
+            });
+           $('#closing3').on('click', function(){
+               $('#PRO3').css("display","none");
+            });
+           $('#closing4').on('click', function(){
+               $('#PRO4').css("display","none");
+            });
+            $('#closing5').on('click', function(){
+               $('#PRO5').css("display","none");
+            });
+           $('#closing6').on('click', function(){
+               $('#PRO6').css("display","none");
+            });
+           $('#closing7').on('click', function(){
+               $('#PRO7').css("display","none");
+            });
 
   });
 
@@ -117,31 +87,34 @@ $(document).ready(function(){
 
 
 ///ANCHOR LINKS TO PROJECTS------------------------------------------------------------
-function scrollToAnchor(aid){
-    var aTag = $("a[name='"+ aid +"']");
-    $('html,body').animate({scrollTop: aTag.offset().top},'slow');
-}
+// function scrollToAnchor(aid){
+//     var aTag = $("a[name='"+ aid +"']");
+//     $('html,body').animate({scrollTop: aTag.offset().top},'slow');
+// }
 
 
 
-$("#link1").click(function() {
-   scrollToAnchor('id1');
-});
-$("#link2").click(function() {
-   scrollToAnchor('id2');
-});
-$("#link3").click(function() {
-   scrollToAnchor('id3');
-});
-$("#link4").click(function() {
-   scrollToAnchor('id4');
-});
-$("#link6").click(function() {
-   scrollToAnchor('id6');
-});
-$("#link7").click(function() {
-   scrollToAnchor('id7');
-});
+// $("#link1").click(function() {
+//    scrollToAnchor('id1');
+// });
+// $("#link2").click(function() {
+//    scrollToAnchor('id2');
+// });
+// $("#link3").click(function() {
+//    scrollToAnchor('id3');
+// });
+// $("#link4").click(function() {
+//    scrollToAnchor('id4');
+// });
+// $("#link5").click(function() {
+//    scrollToAnchor('id5');
+// });
+// $("#link6").click(function() {
+//    scrollToAnchor('id6');
+// });
+// $("#link7").click(function() {
+//    scrollToAnchor('id7');
+// });
 
 
 

@@ -136,8 +136,21 @@ a {
     -webkit-tap-highlight-color: transparent;
 }
 
+.Ulink {
+    color: black;
+    text-decoration: underline;
+    -webkit-tap-highlight-color: transparent;
+}
+
 img{
     width: 95%;
+    border: 0;
+    margin-right: 18px;
+    margin-left: 18px;
+    margin-bottom: 18px;
+}
+.vimeo{
+        width: 95%;
     border: 0;
     margin-right: 18px;
     margin-left: 18px;
@@ -158,6 +171,33 @@ img{
 color: gray;
 }
 
+.project7{
+    display: none;
+}
+
+.project6{
+    display: none;
+}
+
+
+.project5{
+    display: none;
+}
+
+.project4{
+    display: none;
+}
+
+.project3{
+    display: none;
+}
+
+.project2{
+    display: none;
+}
+.project1{
+    display: none;
+}
 
 
 
